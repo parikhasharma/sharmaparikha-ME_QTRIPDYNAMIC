@@ -19,7 +19,7 @@ app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-const PORT = 8082;
+const PORT = process.env.PORT || 8082;
 
 /*
 [GET API] used in module 1 to fetch data for all cities
